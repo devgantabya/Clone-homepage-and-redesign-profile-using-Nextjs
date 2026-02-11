@@ -1,43 +1,33 @@
-import Title from "@/components/ui/Title";
 import Image from "next/image";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 const HeroSection = () => {
   return (
-    <section className="bg-[#fbf6f1] py-16">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center">
-          {/* Image */}
-          <div>
+    <section className="bg-[#fbf6f1] pt-10">
+      <div className="container mx-auto px-4 pb-2">
+        <div className="w-full flex items-center gap-16">
+          <div className="w-128.25 overflow-hidden rounded-t-full">
             <Image
               src="/images/live-your-life-in-full-bloom.webp"
+              width={513}
+              height={770}
               alt="Live your life in full bloom"
-              width={600}
-              height={800}
-              className="w-full max-w-md md:max-w-lg rounded-t-full object-cover"
-              priority
+              className="w-full object-cover"
             />
           </div>
-
-          {/* Content */}
-          <div className="text-center md:text-left">
-            <Title as="h1">
-              Live your life
-              <br />
+          <div className="w-1/2 overflow-hidden text-center text-[#223614]">
+            <h2 className="text-[73.372px] leading-[75.7199px] font-medium mt-6">
+              Live your life <br />
               in full bloom
-            </Title>
-
-            <p className="mt-4 text-sm uppercase tracking-wide text-[#223614]">
+            </h2>
+            <p className="text-[19.2784px] mt-4">
               Therapy for Adults in Minneapolis, MN.
             </p>
-
-            <button
-              className="mt-8 px-6 py-3 border border-[#223614] text-[#223614] 
-                         uppercase text-sm tracking-wider 
-                         hover:bg-[#223614] hover:text-white 
-                         transition duration-300"
-              aria-label="Connect with me"
-            >
-              Connect with me →
+            <button className="flex items-center gap-2 mx-auto text-[14.3608px] font-medium uppercase hover:text-white px-[28.7216px] py-[14.3608px] border border-[#223614] mt-6 bg-transparent hover:bg-[#223614] transition-colors duration-1000">
+              Connect with me
+              <span>
+                <IoIosArrowRoundForward />
+              </span>
             </button>
           </div>
         </div>
