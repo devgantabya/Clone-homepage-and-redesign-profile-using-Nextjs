@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { FiPlus } from "react-icons/fi";
+import { FiMinus } from "react-icons/fi";
 
 const faqs = [
   {
@@ -25,7 +27,7 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section className="bg-[#d9d3cc] py-28">
+    <section className="bg-[#fbf6f1] py-28">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-2 gap-28 items-center">
           {/* LEFT ARCH IMAGE */}
@@ -44,9 +46,9 @@ export default function FAQSection() {
 
           {/* RIGHT FAQ CONTENT */}
           <div className="max-w-xl text-[#223614]">
-            <h3 className="text-6xl font-medium leading-tight">FAQs</h3>
+            <h2 className="text-6xl font-medium leading-tight">FAQs</h2>
 
-            <div className="space-y-0">
+            <div className="space-y-0 border-t mt-8">
               {faqs.map((faq, index) => (
                 <div key={index} className="border-b border-[#223614] py-4">
                   <button
@@ -56,13 +58,13 @@ export default function FAQSection() {
                     className="w-full flex items-center gap-5 text-left text-4xl"
                   >
                     <span className="text-4xl leading-none">
-                      {openIndex === index ? "-" : "+"}
+                      {openIndex === index ? <FiMinus /> : <FiPlus />}
                     </span>
                     <span>{faq.question}</span>
                   </button>
 
                   {openIndex === index && (
-                    <p className="mt-4 text-sm text-[#223614]/80 leading-relaxed">
+                    <p className="mt-4 text-xl text-[#223614]/80 leading-relaxed">
                       {faq.answer}
                     </p>
                   )}

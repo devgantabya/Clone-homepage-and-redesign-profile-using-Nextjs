@@ -4,7 +4,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const TrustBuilding = () => {
   return (
-    <section className="bg-[#fbf6f1] py-28">
+    <section className="bg-[#e5e0da] py-28">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-2 items-center gap-24 relative">
           {/* LEFT */}
