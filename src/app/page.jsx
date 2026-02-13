@@ -1,10 +1,19 @@
-import HeroSection from "@/components/HeroSection";
-import Image from "next/image";
+import BalanceLife from "@/components/BalanceLife";
+import FAQSection from "@/components/FAQ";
+import HeroSection from "@/components/Hero";
+import MySpecialties from "@/components/MySpecialties";
+import PretherapyConversion from "@/components/PretherapyConversion";
+import TrustBuilding from "@/components/TrustBuilding";
 
 export default function Home() {
   return (
     <div>
       <HeroSection />
+      <BalanceLife />
+      <MySpecialties />
+      <PretherapyConversion />
+      <TrustBuilding />
+      <FAQSection />
     </div>
   );
 }

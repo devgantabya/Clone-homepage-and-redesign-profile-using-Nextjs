@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-const HeroSection = () => {
+const Hero = () => {
   return (
     <section className="bg-[#fbf6f1] pt-10">
       <div className="container mx-auto px-4 pb-2">
@@ -26,7 +26,7 @@ const HeroSection = () => {
             <button className="flex items-center gap-2 mx-auto text-[14.3608px] font-medium uppercase hover:text-white px-[28.7216px] py-[14.3608px] border border-[#223614] mt-6 bg-transparent hover:bg-[#223614] transition-colors duration-1000">
               Connect with me
               <span>
-                <IoIosArrowRoundForward />
+                <IoIosArrowRoundForward size={18} />
               </span>
             </button>
           </div>
@@ -36,4 +36,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;
