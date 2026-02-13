@@ -30,7 +30,7 @@ const MyProfessional = () => {
       <h2 className="text-4xl font-medium leading-tight text-center">
         My Professional Background
       </h2>
-      <div className="w-2xl mx-auto space-y-0 border-t mt-8">
+      <div className="w-[622px] mx-auto space-y-0 border-t mt-8">
         {professionalFaqs.map((faq, index) => (
           <div key={index} className="border-b border-[#223614]">
             <button
@@ -43,7 +43,7 @@ const MyProfessional = () => {
               </span>
             </button>
             {openIndex === index && (
-              <p className="text-xl text-[#223614]/80 leading-relaxed pb-5 px-20">
+              <p className="text-xl text-[#223614]/80 leading-relaxed pb-5 px-22">
                 {faq.answer}
               </p>
             )}

@@ -1,5 +1,6 @@
 import BalanceLife from "@/components/BalanceLife";
 import FAQSection from "@/components/FAQ";
+import GetStarted from "@/components/GetStarted";
 import HeroSection from "@/components/Hero";
 import MyProfessional from "@/components/MyProfessional";
 import MySpecialties from "@/components/MySpecialties";
@@ -16,6 +17,7 @@ export default function Home() {
       <TrustBuilding />
       <FAQSection />
       <MyProfessional />
+      <GetStarted />
     </div>
   );
 }
