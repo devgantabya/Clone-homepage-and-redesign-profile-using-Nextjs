@@ -9,7 +9,7 @@ import TrustBuilding from "@/components/TrustBuilding";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <HeroSection />
       <BalanceLife />
       <MySpecialties />
@@ -18,6 +18,6 @@ export default function Home() {
       <FAQSection />
       <MyProfessional />
       <GetStarted />
-    </div>
+    </main>
   );
 }

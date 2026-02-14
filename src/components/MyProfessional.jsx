@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { FiPlus } from "react-icons/fi";
-import { FiMinus } from "react-icons/fi";
 
 const professionalFaqs = [
   {
@@ -25,28 +23,53 @@ const professionalFaqs = [
 const MyProfessional = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
+  const toggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
-    <section className="bg-[#e5e0da] text-[#223614] py-28">
-      <h2 className="text-4xl font-medium leading-tight text-center">
+    <section className="bg-[#e5e0da] text-[#223614] py-16 md:py-28 px-5">
+      <h2 className="text-3xl md:text-[41px] font-bold text-center">
         My Professional Background
       </h2>
-      <div className="w-[622px] mx-auto space-y-0 border-t mt-8">
+
+      <div className="max-w-xl mx-auto mt-10 border-t border-[#223614]">
         {professionalFaqs.map((faq, index) => (
           <div key={index} className="border-b border-[#223614]">
             <button
-              onClick={() => setOpenIndex(openIndex === index ? null : index)}
-              className="w-full flex items-center justify-between gap-5 py-3 text-left text-2xl"
+              onClick={() => toggle(index)}
+              className="w-full flex items-center justify-between py-3 text-left text-lg md:text-2xl"
             >
               <span>{faq.question}</span>
-              <span className="text-2xl leading-none">
-                {openIndex === index ? <FiMinus /> : <FiPlus />}
-              </span>
+
+              <div className="relative w-5 h-5">
+                <span className="absolute inset-0 flex items-center justify-center">
+                  <span className="block w-5 h-[2px] bg-[#223614]"></span>
+                </span>
+
+                <span
+                  className={`absolute inset-0 flex items-center justify-center transition-transform duration-300 ease-in-out ${
+                    openIndex === index ? "rotate-180" : "rotate-90"
+                  }`}
+                >
+                  <span className="block w-5 h-[2px] bg-[#223614]"></span>
+                </span>
+              </div>
             </button>
-            {openIndex === index && (
-              <p className="text-xl text-[#223614]/80 leading-relaxed pb-5 px-22">
-                {faq.answer}
-              </p>
-            )}
+
+            <div
+              className={`grid transition-all duration-300 ease-in-out ${
+                openIndex === index
+                  ? "grid-rows-[1fr] opacity-100"
+                  : "grid-rows-[0fr] opacity-0"
+              }`}
+            >
+              <div className="overflow-hidden">
+                <p className="text-base md:text-[19px] text-[#223614]/80 leading-relaxed pb-6 px-3 md:px-20">
+                  {faq.answer}
+                </p>
+              </div>
+            </div>
           </div>
         ))}
       </div>

@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={gopher.className}>
         <Header />
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>

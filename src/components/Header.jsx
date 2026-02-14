@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Header = () => {
@@ -10,7 +11,6 @@ const Header = () => {
       {/* Header */}
       <header className="text-[#223614] bg-[#fbf6f1] z-50 relative">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          
           {/* Hamburger LEFT */}
           <div
             className="md:hidden flex flex-col gap-1 cursor-pointer"
@@ -35,19 +35,19 @@ const Header = () => {
 
           {/* Logo */}
           <h1 className="text-[24px] md:text-[32px] font-bold">
-            Lilac Template
+            <Link href="/">Lilac Template</Link>
           </h1>
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-10">
             <li className="hover:text-[#8c7c5f] text-[19px] cursor-pointer">
-              Blog
+              <Link href="/blog">Blog</Link>
             </li>
             <li className="hover:text-[#8c7c5f] text-[19px] cursor-pointer">
-              Contact
+              <Link href="/contact">Contact</Link>
             </li>
             <li className="hover:text-[#8c7c5f] text-[19px] cursor-pointer">
-              Profile
+              <Link href="/profile">Profile</Link>
             </li>
           </ul>
         </div>
@@ -71,19 +71,19 @@ const Header = () => {
           className="list-none hover:text-[#8c7c5f] cursor-pointer"
           onClick={() => setIsOpen(false)}
         >
-          Blog
+          <Link href="/blog">Blog</Link>
         </li>
         <li
           className="list-none hover:text-[#8c7c5f] cursor-pointer"
           onClick={() => setIsOpen(false)}
         >
-          Contact
+          <Link href="/contact">Contact</Link>
         </li>
         <li
           className="list-none hover:text-[#8c7c5f] cursor-pointer"
           onClick={() => setIsOpen(false)}
         >
-          Profile
+          <Link href="/profile">Profile</Link>
         </li>
       </div>
     </div>
