@@ -28,7 +28,7 @@ const MyProfessional = () => {
   };
 
   return (
-    <section className="bg-[#e5e0da] text-[#223614] py-16 md:py-28 px-5">
+    <section className="bg-[#e5e0da] text-primary py-16 md:py-28 px-5">
       <h2 className="text-3xl md:text-[41px] font-bold text-center">
         My Professional Background
       </h2>
@@ -65,7 +65,7 @@ const MyProfessional = () => {
               }`}
             >
               <div className="overflow-hidden">
-                <p className="text-base md:text-[19px] text-[#223614]/80 leading-relaxed pb-6 px-3 md:px-20">
+                <p className="text-base md:text-[19px] text-primary/80 leading-relaxed pb-6 px-3 md:px-20">
                   {faq.answer}
                 </p>
               </div>

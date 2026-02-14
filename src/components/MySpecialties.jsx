@@ -4,11 +4,11 @@ import React from "react";
 const MySpecialties = () => {
   return (
     <section className="bg-[#fbf6f1] py-10 font-bold">
-      <h2 className="text-center text-4xl lg:text-5xl leading-tight text-[#223614] py-16">
+      <h2 className="text-center text-4xl lg:text-5xl leading-tight text-primary py-16">
         My Specialties
       </h2>
       <div className="container mx-auto px-4 pb-2 flex flex-col md:flex-row justify-between gap-4">
-        <div className="text-[#223614] leading-5 bg-[#e5e0da] border p-4 space-y-8">
+        <div className="text-primary leading-5 bg-[#e5e0da] border p-4 space-y-8">
           <h4 className="text-xl">Self-Esteem</h4>
           <p className="text-sm leading-relaxed">
             Building a strong sense of self-worth is key to living a fulfilled
@@ -24,7 +24,7 @@ const MySpecialties = () => {
           </div>
         </div>
 
-        <div className="text-[#223614] leading-5 bg-[#e5e0da] border p-4 space-y-8">
+        <div className="text-primary leading-5 bg-[#e5e0da] border p-4 space-y-8">
           <h4 className="text-xl">Relationships</h4>
           <p className="text-sm leading-relaxed">
             Navigating relationships can be complex. I'm here to guide you
@@ -40,7 +40,7 @@ const MySpecialties = () => {
           </div>
         </div>
 
-        <div className="text-[#223614] leading-5 bg-[#e5e0da] border p-4 space-y-8">
+        <div className="text-primary leading-5 bg-[#e5e0da] border p-4 space-y-8">
           <h4 className="text-xl">Burnout</h4>
           <p className="text-sm leading-relaxed">
             Feeling overwhelmed by your career is more common than you think.

@@ -63,7 +63,7 @@ export default function FAQSection() {
             </div>
           </div>
 
-          <div className="max-w-xl text-[#223614]">
+          <div className="max-w-xl text-primary">
             <h2 className="text-4xl md:text-6xl font-bold leading-tight">
               FAQs
             </h2>
@@ -99,7 +99,7 @@ export default function FAQSection() {
                       openIndex === index ? "max-h-96 mt-4" : "max-h-0"
                     }`}
                   >
-                    <p className="text-xl text-[#223614]/80 leading-relaxed">
+                    <p className="text-xl text-primary/80 leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>

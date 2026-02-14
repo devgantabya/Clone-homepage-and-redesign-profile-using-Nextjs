@@ -8,7 +8,7 @@ const BalanceLife = () => {
   return (
     <section className="bg-[#e5e0da]">
       <div className="flex flex-col-reverse md:flex-row h-auto md:h-[650px]">
-        <div className="w-full md:w-1/2 flex flex-col text-[#223614]">
+        <div className="w-full md:w-1/2 flex flex-col text-primary">
           <div className="flex-1 flex items-center justify-center md:justify-start px-6 md:px-20 py-12 md:py-0">
             <div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium leading-tight">

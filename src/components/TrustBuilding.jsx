@@ -4,7 +4,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const TrustBuilding = () => {
   return (
-    <section className="bg-[#e5e0da] py-20 md:py-28">
+    <section className="bg-[#e5e0da] py-12 md:py-24">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-14 md:gap-24 relative">
           <div className="relative flex justify-center md:justify-end order-1 md:order-2">
@@ -29,19 +29,19 @@ const TrustBuilding = () => {
             </div>
           </div>
 
-          <div className="text-[#223614] max-w-xl order-2 md:order-1">
+          <div className="text-primary max-w-xl order-2 md:order-1">
             <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
               Hi, I'm Lilac.
             </h2>
 
-            <p className="mt-5 mb-12 font-bold text-base leading-relaxed text-[#223614]/90">
+            <p className="mt-6 font-bold text-base md:text-lg leading-relaxed text-primary">
               I'm committed to providing a safe and supportive environment where
               we can explore your thoughts, feelings, and behaviors. With
               empathy and guidance, we'll work together to navigate the
               challenges life throws your way.
             </p>
 
-            <button className="mt-6 mx-auto flex items-center gap-2 text-base md:text-[14.3608px] font-bold uppercase px-6 py-3 md:px-[28.7216px] md:py-[14.3608px] border border-[#223614] bg-transparent hover:bg-[#223614] hover:text-white transition-colors duration-1000">
+            <button className="mt-12 mx-auto flex items-center gap-2 text-base md:text-[14.3608px] font-bold uppercase px-6 py-3 md:px-[28.7216px] md:py-[14.3608px] border border-[#223614] bg-transparent hover:bg-[#223614] hover:text-white transition-colors duration-1000">
               Let's chat
               <IoIosArrowRoundForward size={18} />
             </button>

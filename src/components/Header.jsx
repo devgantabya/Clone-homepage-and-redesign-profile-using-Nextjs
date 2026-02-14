@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <div className="relative z-50">
-      <header className="text-[#223614] bg-[#fbf6f1] relative">
+      <header className="text-primary bg-[#fbf6f1] relative">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           {/* Hamburger */}
           <div

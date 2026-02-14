@@ -17,7 +17,7 @@ const Hero = () => {
             />
           </div>
 
-          <div className="w-full md:w-1/2 text-center text-[#223614] mt-0 md:-mt-28">
+          <div className="w-full md:w-1/2 text-center text-primary mt-0 md:-mt-28">
             <h2 className="text-[44px] sm:text-[54px] md:text-[73px] leading-tight sm:leading-tight md:leading-[75px] font-bold">
               Live your life <br />
               in full bloom

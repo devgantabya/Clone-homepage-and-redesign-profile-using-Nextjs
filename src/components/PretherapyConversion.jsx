@@ -15,7 +15,7 @@ const PretherapyConversion = () => {
           />
         </div>
 
-        <div className="w-full md:w-1/2 flex flex-col text-[#223614] font-bold">
+        <div className="w-full md:w-1/2 flex flex-col text-primary font-bold">
           <div className="flex-1 flex items-center">
             <div className="px-6 sm:px-10 md:px-20 py-8 md:py-0">
               <h2 className="text-[34px] lg:text-5xl leading-snug sm:leading-tight lg:leading-tight">

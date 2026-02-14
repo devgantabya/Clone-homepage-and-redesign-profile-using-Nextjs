@@ -11,7 +11,7 @@ import Hero from "@/components/profile/Hero";
 
 export default function ProfilePage() {
   return (
-    <main className="text-[#223614]">
+    <main className="text-primary">
       <Hero />
       <div className="hidden md:block">
         <About />
