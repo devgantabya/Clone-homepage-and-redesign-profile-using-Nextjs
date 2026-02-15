@@ -61,13 +61,13 @@ const Header = () => {
             onClick={() => setIsOpen(false)}
             className="hover:text-[#8c7c5f] cursor-pointer"
           >
-            <Link href="/blog">Blog</Link>
+            <a href="https://lilac-template.squarespace.com/blog">Blog</a>
           </li>
           <li
             onClick={() => setIsOpen(false)}
             className="hover:text-[#8c7c5f] cursor-pointer"
           >
-            <Link href="/contact">Contact</Link>
+            <a href="https://lilac-template.squarespace.com/contact">Contact</a>
           </li>
           <li
             onClick={() => setIsOpen(false)}

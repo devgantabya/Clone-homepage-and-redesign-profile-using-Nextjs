@@ -8,7 +8,7 @@
 
 ## 🔗 Live Demo
 
-**Live Website:** [Insert Live Link Here]  
+**Live Website:** https://grow-my-therapy-assignment-mu.vercel.app/  
 **GitHub Repository:** https://github.com/devgantabya/Clone-homepage-and-redesign-profile-using-Nextjs.git  
 **Loom Video Walkthrough:** [Insert Loom Link Here]
 

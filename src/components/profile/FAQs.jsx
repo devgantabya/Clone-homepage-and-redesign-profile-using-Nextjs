@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
+import { headingFont } from "@/app/fonts";
 
 const faqs = [
   {
@@ -29,7 +30,9 @@ const FAQs = () => {
   return (
     <section className="bg-white py-12 md:py-24">
       <div className="container mx-auto px-6 md:max-w-4xl">
-        <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-center">
+        <h2
+          className={`${headingFont.className} text-[#4DB6AC] text-3xl md:text-4xl font-semibold text-center`}
+        >
           Frequently Asked Questions
         </h2>
 
@@ -38,7 +41,7 @@ const FAQs = () => {
             <div key={index} className="border-b border-gray-300 pb-4">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between text-left text-xl md:text-2xl font-semibold"
+                className="w-full flex items-center justify-between text-gray-800 text-left text-xl md:text-2xl font-semibold"
                 aria-expanded={openIndex === index}
                 aria-controls={`faq-answer-${index}`}
               >
@@ -54,7 +57,7 @@ const FAQs = () => {
                   openIndex === index ? "max-h-96 mt-4" : "max-h-0"
                 }`}
               >
-                <p className="text-lg md:text-xl leading-relaxed">
+                <p className="text-lg text-gray-700 md:text-xl leading-relaxed">
                   {faq.answer}
                 </p>
               </div>

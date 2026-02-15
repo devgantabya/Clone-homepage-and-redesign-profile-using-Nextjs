@@ -14,7 +14,10 @@ const MySpecialties = () => {
             Building a strong sense of self-worth is key to living a fulfilled
             life. Let's work together to bolster your self-esteem.
           </p>
-          <div className="relative w-70 h-70 md:w-65 md:h-65 mx-auto rounded-full overflow-hidden mb-3 md:mb-0">
+          <div
+            data-aos="fade-up"
+            className="relative w-70 h-70 md:w-65 md:h-65 mx-auto rounded-full overflow-hidden mb-3 md:mb-0"
+          >
             <Image
               src="/images/Self-Esteem.webp"
               alt="Self-Esteem"

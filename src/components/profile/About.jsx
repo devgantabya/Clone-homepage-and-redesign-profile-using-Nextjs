@@ -1,4 +1,5 @@
 import React from "react";
+import { headingFont } from "@/app/fonts";
 
 const About = () => {
   return (
@@ -8,12 +9,14 @@ const About = () => {
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
-          <h2 className="font-playfair text-5xl font-semibold leading-12">
+          <h2
+            className={`${headingFont.className} text-[#4DB6AC] text-5xl font-semibold leading-12`}
+          >
             About Dr. Maya Reynolds, PsyD
           </h2>
         </div>
 
-        <div className="space-y-8 text-xl leading-relaxed">
+        <div className="space-y-8 text-gray-700 text-xl leading-relaxed">
           <p>
             I am a licensed clinical psychologist based in Santa Monica,
             California, offering therapy for adults who feel overwhelmed by

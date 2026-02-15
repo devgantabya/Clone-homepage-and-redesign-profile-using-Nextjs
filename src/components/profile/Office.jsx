@@ -1,15 +1,18 @@
 import Image from "next/image";
 import React from "react";
+import { headingFont } from "@/app/fonts";
 
 const Office = () => {
   return (
     <section className="bg-white py-12 md:py-24">
       <div className="container mx-auto px-6 md:flex md:gap-12 items-center">
         <div className="md:w-1/2">
-          <h2 className="font-playfair text-3xl md:text-4xl font-semibold">
+          <h2
+            className={`${headingFont.className} text-[#4DB6AC] text-3xl md:text-4xl font-semibold`}
+          >
             Office Location
           </h2>
-          <p className="mt-4 text-lg md:text-xl leading-relaxed">
+          <p className="mt-4 text-gray-700 text-lg md:text-xl leading-relaxed">
             123th Street 45 W, Santa Monica, CA 90401
           </p>
         </div>

@@ -8,7 +8,7 @@ const OurOffice = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="text-primary order-2 md:order-1">
             <h2 className="text-4xl md:text-6xl font-bold leading-tight">
-              Our Office
+              A Calm Space for Healing
             </h2>
 
             <p className="mt-8 font-bold text-base md:text-lg leading-relaxed text-primary">

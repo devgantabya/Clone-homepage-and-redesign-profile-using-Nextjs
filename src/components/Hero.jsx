@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Hero = () => {
@@ -6,7 +7,10 @@ const Hero = () => {
     <section className="bg-[#fbf6f1] pt-10">
       <div className="container mx-auto px-4 pb-20 md:pb-3">
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-5">
-          <div className="w-full max-w-[180px] sm:max-w-[320px] md:max-w-none md:w-[513px] overflow-hidden rounded-t-[180px] sm:rounded-t-[200px] md:rounded-t-full mx-auto">
+          <div
+            data-aos="fade-up"
+            className="w-full max-w-[180px] sm:max-w-[320px] md:max-w-none md:w-[513px] overflow-hidden rounded-t-[180px] sm:rounded-t-[200px] md:rounded-t-full mx-auto"
+          >
             <Image
               src="/images/live-your-life-in-full-bloom.webp"
               width={513}
@@ -17,7 +21,10 @@ const Hero = () => {
             />
           </div>
 
-          <div className="w-full md:w-1/2 text-center text-primary mt-0 md:-mt-28">
+          <div
+            data-aos="fade-up"
+            className="w-full md:w-1/2 text-center text-primary mt-0 md:-mt-28"
+          >
             <h2 className="text-[44px] sm:text-[54px] md:text-[73px] leading-tight sm:leading-tight md:leading-[75px] font-bold">
               Live your life <br />
               in full bloom
@@ -27,15 +34,16 @@ const Hero = () => {
               Therapy for Adults in Minneapolis, MN.
             </p>
 
-            <button
-              className="flex items-center gap-2 mx-auto text-sm font-bold uppercase 
-            px-8 py-3 sm:px-6  border border-[#223614] mt-6 
+            <Link
+              href="/"
+              className="flex items-center justify-center gap-2 w-1/2 md:w-1/3  mx-auto text-sm font-bold uppercase 
+            py-3 border border-[#223614] mt-6 
             bg-transparent hover:bg-[#223614] hover:text-white 
             transition-all duration-500"
             >
               Connect with me
               <IoIosArrowRoundForward size={20} />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

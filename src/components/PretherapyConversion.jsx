@@ -41,10 +41,13 @@ const PretherapyConversion = () => {
           </div>
 
           <div className="border-t border-[#223614]">
-            <button className="w-full flex items-center justify-center px-6 sm:px-20 py-4 sm:py-6 uppercase text-base tracking-wide hover:bg-[#223614] hover:text-white transition-all duration-500">
+            <a
+              href="https://lilac-template.squarespace.com/contact"
+              className="w-full flex items-center justify-center px-6 sm:px-20 py-4 sm:py-6 uppercase text-base tracking-wide hover:bg-[#223614] hover:text-white transition-all duration-500"
+            >
               <span>Work with me</span>
               <IoIosArrowRoundForward size={20} />
-            </button>
+            </a>
           </div>
         </div>
       </div>
