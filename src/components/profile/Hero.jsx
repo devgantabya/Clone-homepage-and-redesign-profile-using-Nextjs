@@ -1,20 +1,23 @@
 import React from "react";
 import Image from "next/image";
+import { headingFont } from "@/app/fonts";
 
 const Hero = () => {
   return (
     <section className="bg-[#F5EBDD] py-12 md:py-24">
       <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-12">
         <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="font-playfair text-4xl md:text-6xl font-semibold leading-tight">
+          <h1
+            className={`${headingFont.className} text-4xl md:text-6xl font-semibold leading-tight text-[#4DB6AC]`}
+          >
             Dr. Maya Reynolds, PsyD
           </h1>
-          <p className="mt-4 text-lg md:text-xl leading-relaxed">
+          <p className="mt-4 text-gray-700 text-lg md:text-xl leading-relaxed">
             Licensed Clinical Psychologist based in Santa Monica, California.
             offering therapy for adults who feel overwhelmed by anxiety, stress,
             or the lingering effects of past experiences.
           </p>
-          <p className="mt-4 text-lg md:text-xl leading-relaxed">
+          <p className="mt-4 text-gray-700 text-lg md:text-xl leading-relaxed">
             Many of the people I work with are high-achieving, thoughtful, and
             self-aware—but internally feel exhausted, stuck in overthinking, or
             emotionally on edge.

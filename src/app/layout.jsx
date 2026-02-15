@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AOSProvider from "@/components/animations/AOSProvider";
 
 const gopher = localFont({
   src: [
@@ -26,15 +27,20 @@ const gopher = localFont({
 export const metadata = {
   title: "Lilac template",
   description: "A template for internship assignment",
+  icons: {
+    icon: "/lilac-favicon.jpg",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={gopher.className}>
-        <Header />
-        {children}
-        <Footer />
+        <AOSProvider>
+          <Header />
+          {children}
+          <Footer />
+        </AOSProvider>
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { headingFont } from "@/app/fonts";
 
 const AboutInMobile = () => {
   const [showMore, setShowMore] = useState(false);
@@ -23,12 +24,14 @@ const AboutInMobile = () => {
     >
       <div className="container mx-auto px-4">
         <div className="mb-8 text-center">
-          <h2 className="font-playfair text-3xl font-semibold leading-12">
+          <h2
+            className={`${headingFont.className} text-[#4DB6AC] text-3xl font-semibold leading-12`}
+          >
             About Dr. Maya Reynolds, PsyD
           </h2>
         </div>
 
-        <div className="space-y-8 text-lg text-center leading-relaxed animate-fadeUp">
+        <div className="space-y-8 text-lg text-gray-700 text-center leading-relaxed animate-fadeUp">
           {paragraphs.map((para, idx) => {
             if (idx >= mobileVisibleCount) {
               return (

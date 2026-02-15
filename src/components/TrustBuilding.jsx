@@ -41,10 +41,16 @@ const TrustBuilding = () => {
               challenges life throws your way.
             </p>
 
-            <button className="mt-12 mx-auto flex items-center gap-2 text-base md:text-[14.3608px] font-bold uppercase px-6 py-3 md:px-[28.7216px] md:py-[14.3608px] border border-[#223614] bg-transparent hover:bg-[#223614] hover:text-white transition-colors duration-1000">
+            <a
+              href="https://lilac-template.squarespace.com/contact"
+              className="mt-12 flex items-center justify-center gap-2 w-1/2 md:w-1/3  mx-auto text-sm font-bold uppercase 
+            py-3 border border-[#223614] mt-6 
+            bg-transparent hover:bg-[#223614] hover:text-white 
+            transition-all duration-500"
+            >
               Let's chat
               <IoIosArrowRoundForward size={18} />
-            </button>
+            </a>
           </div>
         </div>
       </div>
